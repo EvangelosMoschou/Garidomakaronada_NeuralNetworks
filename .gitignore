@@ -1,0 +1,24 @@
+# Ignore everything
+/*
+
+# Except the garidomakaronada folder
+!.gitignore
+!garidomakaronada/
+
+# Inside garidomakaronada, ignore LaTeX build files
+garidomakaronada/*.aux
+garidomakaronada/*.log
+garidomakaronada/*.out
+garidomakaronada/*.toc
+garidomakaronada/*.nav
+garidomakaronada/*.snm
+garidomakaronada/*.vrb
+garidomakaronada/*.fdb_latexmk
+garidomakaronada/*.fls
+garidomakaronada/*.synctex.gz
+garidomakaronada/*.backup
+
+# Allow specific files even if they match patterns above (if needed)
+!garidomakaronada/Garidomakaronada_NN.tex
+!garidomakaronada/Garidomakaronada_NN_Read.pdf
+!garidomakaronada/Makefile
