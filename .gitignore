@@ -1,24 +1,27 @@
-# Ignore everything
+# Ignore everything by default
 /*
 
-# Except the garidomakaronada folder
+# Allow the gitignore file itself
 !.gitignore
-!garidomakaronada/
 
-# Inside garidomakaronada, ignore LaTeX build files
-garidomakaronada/*.aux
-garidomakaronada/*.log
-garidomakaronada/*.out
-garidomakaronada/*.toc
-garidomakaronada/*.nav
-garidomakaronada/*.snm
-garidomakaronada/*.vrb
-garidomakaronada/*.fdb_latexmk
-garidomakaronada/*.fls
-garidomakaronada/*.synctex.gz
-garidomakaronada/*.backup
+# Allow project files at the root
+!Garidomakaronada_NN.tex
+!Garidomakaronada_NN_Read.pdf
+!Makefile
 
-# Allow specific files even if they match patterns above (if needed)
-!garidomakaronada/Garidomakaronada_NN.tex
-!garidomakaronada/Garidomakaronada_NN_Read.pdf
-!garidomakaronada/Makefile
+# Allow necessary project support folders
+!Garidomakaronada_Template/
+
+# Ignore LaTeX build artifacts at the root
+*.aux
+*.log
+*.out
+*.toc
+*.nav
+*.snm
+*.vrb
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+*.backup
+*.backup2
